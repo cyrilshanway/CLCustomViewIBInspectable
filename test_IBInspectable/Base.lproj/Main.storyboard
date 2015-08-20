@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0xB-AD-Nyh">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="test_IBInspectable" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KK0-Vq-zDX" customClass="Rainbow" customModule="test_IBInspectable" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="83" width="600" height="434"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.20000000000000001" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2196078431372549" green="0.20000000000000001" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KK0-Vq-zDX" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="0K7-E2-WuC"/>
+                            <constraint firstItem="KK0-Vq-zDX" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="63" id="4fU-JB-lu7"/>
+                            <constraint firstItem="KK0-Vq-zDX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="5PO-eh-Obf"/>
+                            <constraint firstAttribute="trailing" secondItem="KK0-Vq-zDX" secondAttribute="trailing" id="ZiG-73-8Sz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BWe-cb-0HO">
+            <objects>
+                <viewController id="0xB-AD-Nyh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ffe-pi-0l7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Euv-d3-9ht"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gKl-e8-aLm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xii-39-DBw" customClass="SquareView" customModule="test_IBInspectable" customModuleProvider="target">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.90085320719999995" green="0.82755962169999997" blue="0.90971936679999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xii-39-DBw" firstAttribute="top" secondItem="ffe-pi-0l7" secondAttribute="bottom" constant="130" id="CTP-HN-o2R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xii-39-DBw" secondAttribute="trailing" constant="134" id="RTM-2u-Jgn"/>
+                            <constraint firstAttribute="width" secondItem="Xii-39-DBw" secondAttribute="height" multiplier="2:1" id="Sr9-bN-7MR"/>
+                            <constraint firstItem="Xii-39-DBw" firstAttribute="centerX" secondItem="gKl-e8-aLm" secondAttribute="centerX" id="xOy-fY-zr6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XHb-gz-7qc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="322"/>
+        </scene>
+    </scenes>
+</document>
